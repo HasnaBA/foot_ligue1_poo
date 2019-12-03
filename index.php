@@ -29,6 +29,7 @@ if ($route === 'teams') {
     $controller = new Teams();
     if (isset($data[1])){
         $controller->showTeam($data[1]);
+       
     } else {
     //on appel la methode de la class Teams
     $controller->listTeams();

@@ -7,27 +7,28 @@ use Models\Teams as ModelTeams;
 
 class Teams extends Controller
 {
+    private $model;
+    
+    public function ___contstruct()
+    {
+        $this->model= new ModelTeams;
+    }
     public function listTeams() 
     {
-        $model = new ModelTeams;
-        $teams = $model->getTeams();
         $this->render('views/listTeams.php', [
             // passer les variables à la view
-            'teams' => $teams, 
+            'teams' => $this->model->getTeams() 
         ]);
 
     }
 
-    public function showTeam($id) 
+    public function showTeam(int $id) 
     {
-        $model = new ModelTeams;
-        $teams = $model->getTeam($id);
-
-        $this->render('views/showTeam.php'); 
+        $this->render('views/showTeam.php', [
             // passer les variables à la view
-        var_dump($teams);
-
-       
+        'team' => $this->model->getTeam($id)
+            
+        ]);
 
     }
 }

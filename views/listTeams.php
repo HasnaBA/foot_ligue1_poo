@@ -66,7 +66,7 @@ h1 {
                     <div id="card" class="card-body">
                         <div class="text-center">
                             
-                            <a href="./team/<?php echo $team->getId(); ?>" class="btn btn-dark bouton"><h5 class="card-title"><strong><?php echo $team->getName();?></strong></h5></a>
+                            <a href="./teams/<?php echo $team->getId(); ?>" class="btn btn-dark bouton"><h5 class="card-title"><strong><?php echo $team->getName();?></strong></h5></a>
                         </div>
                     </div>
                 </div>

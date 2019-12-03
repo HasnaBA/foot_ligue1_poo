@@ -30,12 +30,12 @@
 
             <ul id="description" class="list-group ">
                 <li class="list-group-item"></li>
-                <li class="list-group-item">Nom :<strong><?php echo $teams->getName(); ?></strong></li>
-                <li class="list-group-item">Fondé en : <strong><?php echo  $teams->getFundation_date(); ?></strong></li>
-                <li class="list-group-item">Président :<strong> <?php echo  $teams->getPresident(); ?></strong></li>
-                <li class="list-group-item">Entraîneur :<strong> <?php echo  $teams->getCoach_name(); ?></strong></li>
+                <li class="list-group-item">Nom :<strong><?php echo $team->getName(); ?></strong></li>
+                <li class="list-group-item">Fondé en : <strong><?php echo  $team->getFundation_date(); ?></strong></li>
+                <li class="list-group-item">Président :<strong> <?php echo  $team->getPresident(); ?></strong></li>
+                <li class="list-group-item">Entraîneur :<strong> <?php echo  $team->getCoach_name(); ?></strong></li>
             </ul>
-            <img class="card-img-top" style="width: 18rem" src="<?php echo $teams->getLogo; ?> " alt="team_logo">
+            <img class="card-img-top" style="width: 18rem" src="<?php echo $team->getLogo(); ?> " alt="team_logo">
 
         </div>
     </div>
