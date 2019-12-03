@@ -1,0 +1,32 @@
+h1 {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#logo1 {
+    font-size: 1.5rem;
+}
+.name {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 1.5rem;
+}
+
+body {
+    
+    background-image: url('https://www.liveonscore.com/fr/wp-content/uploads/2017/08/wall.jpg');
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    font-family: Georgia, "DejaVu Serif", Norasi, serif;
+   
+}
+
+footer{
+    background-color: grey;
+    color:white;
+    text-align: center;
+    margin-top: 100px;
+    
+      
+}
